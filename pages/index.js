@@ -3,14 +3,14 @@ import Featured from "@/components/Featured";
 import { Product } from "@/models/Product";
 import { mongooseConnect } from "@/lib/mongoose";
 // import SimpleMap from "@/components/SimpleMap";
-
+import GoogleMapWrapper from "@/components/GoogleMapWrapper";
 export default function HomePage({ featuredProduct, newProducts }) {
   return (
     <div>
       <Header />
       <Featured product={featuredProduct} />
-      <section className="container mx-auto px-4 my-12">
-      </section>
+        <GoogleMapWrapper />
+
     </div>
   );
 }
